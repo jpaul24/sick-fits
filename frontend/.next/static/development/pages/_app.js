@@ -37,7 +37,7 @@ var Header = function Header() {
       lineNumber: 6
     },
     __self: this
-  }, "GoodThreads"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "GarmThreads"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -131,7 +131,7 @@ var Meta = function Meta() {
       lineNumber: 9
     },
     __self: this
-  }, "GoodThreads"));
+  }, "GarmThreads"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);

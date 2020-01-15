@@ -3,7 +3,7 @@ import Nav from './Nav'
 const Header = () => (
     <div>
         <div className="bar">
-            <a href="">GoodThreads</a>
+            <a href="">GarmThreads</a>
             <Nav />       
         </div>
         <div className="sub-bar">
