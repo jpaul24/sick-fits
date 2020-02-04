@@ -321,7 +321,7 @@ var Nav = function Nav() {
       lineNumber: 7
     },
     __self: this
-  }, "items")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "shop")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/sell",
     __source: {
       fileName: _jsxFileName,
@@ -373,7 +373,7 @@ var Nav = function Nav() {
       lineNumber: 19
     },
     __self: this
-  }, "me")));
+  }, "account")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
