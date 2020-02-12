@@ -103,89 +103,101 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        onSubmit: function onSubmit(e) {
-          e.preventDefault();
-          console.log(_this2.state);
-        },
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Mutation"], {
+        mutation: CREATE_ITEM_MUTATION,
+        variables: this.state,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }, "Title", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        id: "title",
-        name: "title",
-        placeholder: "Title",
-        required: true,
-        value: this.state.title,
-        onChange: this.handleChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "price",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }, "Price", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "number",
-        id: "price",
-        name: "price",
-        placeholder: "Price",
-        required: true,
-        value: this.state.price,
-        onChange: this.handleChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "description",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }, "Description", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        id: "description",
-        name: "description",
-        placeholder: "Enter a description",
-        required: true,
-        value: this.state.description,
-        onChange: this.handleChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        type: "submit",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 81
-        },
-        __self: this
-      }, "Submit")));
+      }, function (createItem, _ref) {
+        var loading = _ref.loading,
+            error = _ref.error;
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          onSubmit: function onSubmit(e) {
+            e.preventDefault();
+            console.log(_this2.state);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 49
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "title",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 50
+          },
+          __self: this
+        }, "Title", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          id: "title",
+          name: "title",
+          placeholder: "Title",
+          required: true,
+          value: _this2.state.title,
+          onChange: _this2.handleChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "price",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 61
+          },
+          __self: this
+        }, "Price", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "number",
+          id: "price",
+          name: "price",
+          placeholder: "Price",
+          required: true,
+          value: _this2.state.price,
+          onChange: _this2.handleChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 63
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+          htmlFor: "description",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 72
+          },
+          __self: this
+        }, "Description", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          id: "description",
+          name: "description",
+          placeholder: "Enter a description",
+          required: true,
+          value: _this2.state.description,
+          onChange: _this2.handleChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "submit",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83
+          },
+          __self: this
+        }, "Submit")));
+      });
     }
   }]);
 
