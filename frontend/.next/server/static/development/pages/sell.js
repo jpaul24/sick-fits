@@ -169,11 +169,9 @@ function (_Component) {
           name = _e$target.name,
           type = _e$target.type,
           value = _e$target.value;
-      var val = type == 'number' ? parseFloat(value) : value;
+      var val = type === 'number' ? parseFloat(value) : value;
 
-      _this.setState({
-        title: e.target.value
-      });
+      _this.setState(_defineProperty({}, name, val));
     });
 
     return _this;
@@ -212,6 +210,45 @@ function (_Component) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "price",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "Price", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "number",
+        id: "price",
+        name: "price",
+        placeholder: "Price",
+        required: true,
+        value: this.state.price,
+        onChange: this.handleChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "description",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, "Description", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "description",
+        name: "description",
+        placeholder: "Enter a description",
+        required: true,
+        value: this.state.description,
+        onChange: this.handleChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
         },
         __self: this
       }))));
