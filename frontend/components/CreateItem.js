@@ -13,6 +13,8 @@ class CreateItem extends Component {
         price: 0,
     }
     handleChange = (e) => {
+        const { name, type, value } = e.target;
+        const val = type == 'number' ? parseFloat(value) : value;
         this.setState({ title: e.target.value });
     }
     render() {

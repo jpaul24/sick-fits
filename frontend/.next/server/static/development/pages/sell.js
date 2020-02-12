@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -165,6 +165,12 @@ function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (e) {
+      var _e$target = e.target,
+          name = _e$target.name,
+          type = _e$target.type,
+          value = _e$target.value;
+      var val = type == 'number' ? parseFloat(value) : value;
+
       _this.setState({
         title: e.target.value
       });
@@ -179,20 +185,20 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         },
         __self: this
       }, "Title", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -205,7 +211,7 @@ function (_Component) {
         onChange: this.handleChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         },
         __self: this
       }))));
@@ -301,7 +307,7 @@ var Sell = function Sell(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/sell.js ***!
   \*****************************/
