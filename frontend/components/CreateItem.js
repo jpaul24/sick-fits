@@ -41,7 +41,7 @@ class CreateItem extends Component {
         this.setState({ [name]: val });
     };
     uploadFile = e => {
-        
+
     }
     render() {
         return (
@@ -60,6 +60,17 @@ class CreateItem extends Component {
                     }}>
                         <Error errot={error}/>
                         <fieldset disabled={loading} aria-busy={loading}>
+                        <   label htmlFor="file">
+                                File
+                                <input type="file" 
+                                id="file" 
+                                name="file" 
+                                placeholder="Upload an image" 
+                                required
+                                value={this.state.title}
+                                onChange={this.uploadFile}/>
+                            </label>
+
                             <label htmlFor="title">
                                 Title
                                 <input type="text" 
