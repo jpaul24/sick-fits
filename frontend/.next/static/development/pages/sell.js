@@ -107,6 +107,8 @@ function (_Component) {
       _this.setState(_defineProperty({}, name, val));
     });
 
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "uploadFile", function (e) {});
+
     return _this;
   }
 
@@ -120,7 +122,7 @@ function (_Component) {
         variables: this.state,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 48
         },
         __self: this
       }, function (createItem, _ref) {
@@ -168,14 +170,14 @@ function (_Component) {
           }(),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 47
+            lineNumber: 50
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__["default"], {
           errot: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 61
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("fieldset", {
@@ -183,14 +185,14 @@ function (_Component) {
           "aria-busy": loading,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
+            lineNumber: 62
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "title",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 63
           },
           __self: this
         }, "Title", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -203,14 +205,14 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 65
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "price",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 74
           },
           __self: this
         }, "Price", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -223,14 +225,14 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 73
+            lineNumber: 76
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "description",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 85
           },
           __self: this
         }, "Description", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -242,14 +244,14 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 84
+            lineNumber: 87
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
           type: "submit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 93
+            lineNumber: 96
           },
           __self: this
         }, "Submit")));
